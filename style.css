@@ -1,12 +1,55 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
   height: 100vh;
   width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#control {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#control button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+}
+
+input {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  font-size: 100px;
+  width: 250px;
+  text-align: center;
+  z-index: 2;
 }

@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <svg height="400" width="400">
-        <circle r="180" cx="200" cy="200" fill="transparent" stroke="#606c38" stroke-width="15"
-            transform="rotate(-90 200 200)">
-        </circle>
-    </svg>
-
     <div class="container">
-        <input type="text" id="duration">
-
-        <div id="control">
-            <button id="start"><i class="fa-solid fa-play"></i></button>
-            <button id="pause"><i class="fa-solid fa-pause"></i></button>
+        <div class="timer">
+            <input type="text" id="duration" value="30">
+            <div id="control">
+                <button id="start"><i class="fa-solid fa-play"></i></button>
+                <button id="pause"><i class="fa-solid fa-pause"></i></button>
+            </div>
+            <svg class="shape" height="400" width="400">
+                <circle r="180" cx="200" cy="200" fill="transparent" stroke="#606c38" stroke-width="25"
+                    transform="rotate(-90 200 200)">
+                </circle>
+            </svg>
         </div>
+
+
 
     </div>
     <script src="timer.js"></script>
